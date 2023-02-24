@@ -1,0 +1,35 @@
+body
+{
+    margin: 0;
+}
+header
+{
+    align-items: center;
+    background-color: purple; 
+    color: white; 
+    display: flex; 
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold; 
+    height: 60px; 
+    padding-left: 30px;
+}
+.presentationSection
+{
+    background-color: black; 
+    display: flex; 
+    height: calc(100vh - 60px); 
+    width: 100%;
+}
+.boxPresentation
+{
+    background-color: white; 
+    height: 50%; 
+    width: 50%; 
+    margin-top: 5%; 
+    margin-left: 25%; 
+    border-radius: 20px; 
+    align-items: top; 
+    display: flex; 
+    justify-content: center;
+}
