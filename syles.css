@@ -1,3 +1,8 @@
+a
+{
+    color: #ADD8E6;
+    font-weight: bold;
+}
 body
 {
     font-family: 'Oswald', sans-serif;
@@ -37,6 +42,23 @@ header
     height: 60px; 
     padding-left: 30px;
 }
+li
+{
+    color: white;
+}
+p
+{
+    display: flex; 
+    font-size: 1.5em;
+    justify-content: center;
+}
+ul
+{
+    display: block;
+    font-size: 1.2em;
+    width: 50%;
+    padding-left: 30%;
+}
 .box-presentation
 {
     background-color: white;
@@ -49,20 +71,23 @@ header
     overflow: hidden;
     width: 40%; 
 }
-p
-{
-    display: flex; 
-    font-size: 1.5em;
-    justify-content: center;
-}
 .presentation-section
 {
     background-color: #042141; 
     display: inline-block;
-    height: calc(100vh - 60px); 
+    height: calc(100vh - 60px);
     justify-content: center;
-    overflow: hidden;
     vertical-align: middle;
+    width: 100%;
+}
+.second-section
+{
+    background-color:  #00101E;
+    display: inline-block;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    vertical-align: middle;
+    overflow: hidden;
     width: 100%;
 }
 .profile-picture
@@ -80,10 +105,11 @@ p
 .tech-icon
 {
     height: 100px;
+    margin: 50px;
+    margin-top: 5px;
 }
 .tech-list
 {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
