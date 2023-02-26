@@ -3,10 +3,14 @@ body
     font-family: 'Oswald', sans-serif;
     margin: 0;
 }
+div
+{
+    display:block; 
+}
 footer
 {
     align-items: center; 
-    background-color: darkblue; 
+    background-color: #547191; 
     color: white; 
     display: flex; 
     flex-direction: column; 
@@ -15,10 +19,16 @@ footer
     height: 250px; 
     justify-content: flex-start; 
 }
+h1
+{
+    display: flex; 
+    font-size: 2em;
+    justify-content: center; 
+}
 header
 {
     align-items: center;
-    background-color: purple; 
+    background-color: #6A3673;
     color: white; 
     display: flex; 
     font-family: 'Oswald', sans-serif;
@@ -27,27 +37,53 @@ header
     height: 60px; 
     padding-left: 30px;
 }
-.presentationSection
-{
-    background-color: black; 
-    display: flex;
-    height: calc(100vh - 60px); 
-    justify-content: center;
-    width: 100%;
-}
-.boxPresentation
+.box-presentation
 {
     background-color: white;
     border-radius: 20px;
-    display: flex; 
+    display: block;
     height: 50%; 
     justify-content: center;
-    margin-top: 5%; 
+    margin: auto;
+    margin-top: 2%;
     overflow: hidden;
-    width: 45%; 
+    width: 40%; 
+}
+p
+{
+    display: flex; 
+    font-size: 1.5em;
+    justify-content: center;
+}
+.presentation-section
+{
+    background-color: #042141; 
+    display: inline-block;
+    height: calc(100vh - 60px); 
+    justify-content: center;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+}
+.profile-picture
+{
+    border-radius: 120px; 
+    height: 200px;
+    width: 100;
 }
 .socials
 {
-    height: 70px; 
     border-radius: 40px;
+    height: 70px;
+    width: 100;
+}
+.tech-icon
+{
+    height: 100px;
+}
+.tech-list
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
