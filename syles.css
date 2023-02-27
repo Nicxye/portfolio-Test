@@ -71,30 +71,76 @@ ul
     overflow: hidden;
     width: 40%; 
 }
+.certificate-image
+{
+    height: 800px;
+}
+.cover
+{
+    padding: 0px 30px;
+    position: relative;
+}
+.fade
+{
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.4s ease;
+    user-select: none;
+}
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
 .presentation-section
 {
     background-color: #042141; 
     display: inline-block;
     height: calc(100vh - 60px);
-    justify-content: center;
     vertical-align: middle;
     width: 100%;
+    margin: 0;
 }
 .second-section
 {
     background-color:  #00101E;
-    display: inline-block;
-    height: calc(100vh - 60px);
+    display: flex;
+    height: 1200px;
     justify-content: center;
-    vertical-align: middle;
-    overflow: hidden;
-    width: 100%;
+    align-items: center;
+    flex-direction: column;
 }
 .profile-picture
 {
     border-radius: 120px; 
     height: 200px;
     width: 100;
+}
+.slides
+{
+    display: none;
+}
+.slideshow
+{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
 }
 .socials
 {

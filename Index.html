@@ -10,13 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="syles.css">
+    <script src="code.js"></script>
 </head>
 <body>
     <header> ✨Nicolás Gabriel Saavedra </header>
 
     <section class="presentation-section">
         <div class="box-presentation">
-            <!--<div style="background-color: #C8A2C8; width: 35%; align-items: center; display: flex ; justify-content: center;"></div>-->
             <div style="display: flex; justify-content: center; margin-top: 5%;">
                 <img class="profile-picture" src="https://avatars.githubusercontent.com/u/89757696?v=4" alt="cool profile picture">           
             </div>
@@ -37,26 +37,36 @@
         </div>
         <div>
             <div class="tech-list">
-                <img class="tech-icon" src="https://learn.microsoft.com/en-us/windows/images/csharp-logo.png" alt="C#">
+                <img class="tech-icon" src="https://learn.microsoft.com/en-us/windows/images/csharp-logo.png" alt="Csharp">
                 <img class="tech-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/800px-Microsoft_.NET_logo.svg.png" alt="dotNET">
                 <img class="tech-icon" src="https://cyclr.com/wp-content/uploads/2022/03/ext-550.png" alt="SQLServer">
             </div>
             <h1 style="color: white;">Courses and Certificates</h1>
             <ul>
                 <li>Programming Fundamentals: University Level - <a href="https://maxiprograma.com/">maxiprograma.com</a> <i> (in Spanish, Curso de Fundamentos de la Programación Nivel Universidad)</i></li>
-                <li>C# Basics Course - maxiprograma.com<i> (in Spanish, Curso de Programación con C# Nivel 1)</i> <a>- SEE CERTIFICATE</a> </li> 
-                <li>C# Level 2 Course: OOP + .NET + SQL - maxiprograma.com<i> (in Spanish, Curso de Programación con C# Nivel 2: POO + .NET + SQL)</i></li>
+                <li>C# Basics Course - maxiprograma.com<i> (in Spanish, Curso de Programación con C# Nivel 1)</i> <a style="cursor: pointer;" onclick="document.getElementById('second').scrollIntoView(); plusSlides(1);">- SEE CERTIFICATE</a> </li> 
+                <li>C# Level 2 Course: OOP + .NET + SQL - maxiprograma.com<i> (in Spanish, Curso de Programación con C# Nivel 2: POO + .NET + SQL)</i> <a style="cursor: pointer;" onclick="document.getElementById('second').scrollIntoView(); plusSlides(1)">- SEE CERTIFICATE</a> </li> 
                 <li>C# Level 3 Course: Web ASP.Net Part 1 - maxiprograma.com<i> (in Spanish, Curso de Programación con C# Nivel 3: Web ASP .NET Parte 1) - <b>in progress...</b></i></li>
             </ul>
     </section>
-    <section class="second-section">
+    <section class="second-section" id="second">
+        <div class="slideshow">
 
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="slides fade">
+                <img class="certificate-image" src="certificates/Certificado_Cs_Nivel1.jpg" alt="CsharpCertificate1">
+            </div>
+            <div class="slides fade">
+                <img class="certificate-image" src="certificates/Certificado_Cs_Nivel2.jpg" alt="CsharpCertificate2">
+
+        </div>
     </section>
     <footer>
         <h3>CONTACT ME</h3>
         <div>
             <a href="https://github.com/Nixkey" target="_blank">
-                <img class="socials" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github">
+                <img class="socials" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Github"/>
             </a>
         </div>
     </footer>
